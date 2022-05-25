@@ -13,8 +13,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.amber,
-        body: Container(),
+        backgroundColor: Colors.redAccent,
+        body: SafeArea (
+          child: Container(
+            color: Colors.white,
+            child: const Text('Hello'),
+          ),
+        ),
       ),
     );
   }
